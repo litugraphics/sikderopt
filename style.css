@@ -1,0 +1,232 @@
+
+
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+body {
+        font-family: "poppins", sans-serif;
+}
+a{
+        text-decoration: none;
+}
+
+header {
+        width: 100%;
+}
+nav {
+        width: 100%;
+        height: 60px;
+        padding:0 clamp(30px,5vw,100px);
+        background-color: rgba(241, 241, 241, 0.849);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+}
+nav .brand a{
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: rgb(255, 137, 41);
+}
+nav .menu a {
+        padding: 0 10px;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: rgb(1, 74, 107);
+        transition: 0.3s ease;
+}
+nav .menu a:hover {
+        color: rgb(1, 121, 177);
+
+}
+
+#toggle_btn {
+        display: none;
+}
+
+.hemburger {
+        display: none;
+        font-size: 2rem;
+        color: rgb(99, 99, 99);
+        cursor: pointer;
+}
+
+/* media query for  Menu max-width: 640px */
+
+@media (max-width:640px){
+         .menu {
+                width: 100%;
+                height: 100vh;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                background-color: rgba(46, 46, 46,0.3);
+                backdrop-filter: blur(10px);
+                position: fixed;
+                top: 60px;
+                right: 0;
+                opacity: 0;
+                transition: 0.3s ease;
+        }
+        nav .menu a{
+                color: aliceblue;
+        }
+        .hemburger {
+        display: block;
+}
+#toggle_btn:checked~.menu {
+        opacity: 1;
+}
+}
+
+
+
+/* --------------------------------hero */
+
+.hero {
+        width: 100%;
+        height: 70vh;
+        background-color:    rgb(1, 74, 107);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 3rem;
+}
+
+/* --------------------------------new Arrivel */
+
+
+#new_arrivel {
+        width: 100%;
+        background-color: rgb(243, 243, 243);
+}
+.new_arrivel_heading {
+        color: rgb(1, 74, 107);
+        
+        text-align: center;
+        padding: 50px 0;
+        /* background-color: rgb(170, 104, 24); */
+}
+.product_group {
+        width: 80%;
+        padding: 50px 0;
+        margin: 0 auto;
+        /* background-color: rgb(245, 244, 244); */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        
+}
+.product {
+        width: 350px;
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+        color: white;
+        border-radius: 3px;
+        transition: 0.32s ease;
+        cursor: pointer;
+
+
+}
+.product:hover {
+        transform: translateY(-30px) scale(1.05);
+        box-shadow: 0 0 20px rgba(46, 46, 46,0.3);
+}
+.product_img {
+        width: 100%;
+}
+.product_body {
+        color: rgb(51, 51, 51);
+        border-radius: 3px;
+        margin-top: 10px;
+        padding: 10px;
+        background-color: rgb(245, 244, 244);
+
+}
+.product_name {
+
+}
+.product_tittle {
+
+}
+.product_price {
+
+}
+
+
+/* --------------------------------------doctor details */
+
+#doctors {
+        background-color:;
+ }
+
+.wrapper { 
+        padding: 100px 0
+}
+
+.doctor_details { 
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+}
+
+.designation { }
+
+.doctor_details_col{
+        width: 400px;
+        height: 400px;
+        /* background-color: coral; */
+}
+
+.doctor_details_col:nth-child(1){
+        display: flex;
+        flex-direction: column;
+        justify-content:  center;
+}
+.doctor_details_col:nth-child(3){
+        display: flex;
+        flex-direction: column;
+        justify-content:  center;
+        align-items: center;
+}
+.doctor_details_col img {
+        width: 100%;
+        border-radius: 200px;
+        border: 0.5px solid #ff9c40;
+        box-shadow: 0px 0px 3px rgba(46, 46, 46,0.2) ,0px 0px 3px rgba(46, 46, 46,0.2);
+        
+
+}
+.doctor_details_col img:hover {
+        box-shadow: 5px 5px 3px rgba(46, 46, 46,0.2) ,-5px -5px 3px rgba(46, 46, 46,0.2);
+
+}
+/* --------------------------------------Footer */
+
+
+.footer_content {
+        width: 100%;
+        height:350px ;
+        padding: 50px;
+        background-color: #222 ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #eee;
+
+}
+
+
+
+
