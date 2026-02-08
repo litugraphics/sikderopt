@@ -96,7 +96,7 @@ nav .menu a:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white;
+        color: rgb(1, 74, 107);
         font-size: 3rem;
         position: relative;
 }
@@ -242,6 +242,7 @@ nav .menu a:hover {
         color: #eee;
 
 }
+
 
 
 
